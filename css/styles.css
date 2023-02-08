@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+    padding: 0px;
+    margin: 0px;
+    background-color: lightgreen;
+}
+
+header{
+    background-color: hotpink;
+}
+
+.altura1{
+    height: 10vh;
+}
+nav{
+    background-color: coral;
+}
+
+.altura2{
+    height: 10vh;
+}
+
+.altura3{
+    height: 70vh;
+}
+
+.altura4{
+    height: 10vh;
+}
+
+
+section{
+    background-color: dodgerblue;
+}
+
+article{
+    background-color:rgb(173, 231, 173) ;
+}
+
+aside{
+
+    background-color: papayawhip;
+}
+
+footer{
+    background-color: plum;
+}
