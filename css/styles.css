@@ -2,51 +2,513 @@
     box-sizing: border-box;
 }
 
+
+.container{
+  background-color: none;
+}
+
 body{
 
     padding: 0px;
     margin: 0px;
-    background-color: lightgreen;
+    background-color: #fffefe;
 }
 
 header{
-    background-color: hotpink;
+  
+    background-color: white;
+    
+    
 }
 
-.altura1{
-    height: 10vh;
-}
-nav{
-    background-color: coral;
+
+h6{
+    font-family:a;
+    font-size: 4rem;
+    color: #fefefe;
+    text-align: center;
+    padding-top: 5rem;
+    
+    
 }
 
-.altura2{
-    height: 10vh;
+
+@font-face{
+    font-family: a;
+    src: url(../tipo/Saudagar.ttf);
 }
 
-.altura3{
-    height: 70vh;
+.a1{
+    height: 20rem;
+     
+}
+
+
+.a2{
+    height: 5rem;
+
+}
+
+.a3{
+    height: 40rem;
+    
 }
 
 .altura4{
-    height: 10vh;
+  height: 5rem;
+  background-color: rgb(249, 249, 88);
 }
 
 
-section{
-    background-color: dodgerblue;
+
+
+
+.blanco{
+    background-color: #ffffff;
+    padding: 2rem ;
+       
 }
 
-article{
-    background-color:rgb(173, 231, 173) ;
-    padding: 20px;
+
+.lila{
+    background-color: rgb(202, 130, 250);
+    padding: 2rem;
+   
+    
 }
 
-aside{
+a:active {
+    color: rgb(244, 233, 23);
+  }
 
-    background-color: papayawhip;
+select {
+    margin: 4px;
+  }
+  
+  /* Etiquetas para entradas marcadas */
+  input:checked + label {
+    color: #ffffff;
+  }
+  
+  /* Elemento Radio, cuando está marcado */
+  input[type="radio"]:checked {
+    box-shadow: 0 0 0 2px #ffffff;
+  }
+  
+  /* Elemento Checkbox, cuando está marcado */
+  input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px rgb(255, 255, 255);
+  }
+  
+  /* Elementos Option, cuando se seleccionan */
+  option:checked {
+    box-shadow: 0 0 0 3px black;
+    color: rgb(218, 49, 218);
+  }
+
+  :current(p, span) {
+    background-color: #ffffff;
+  }
+
+  input:default {
+    box-shadow: 0 0 2px 1px rgb(2, 2, 2);
+  }
+  
+  input:default + label {
+    color: rgb(15, 15, 15);
+  }
+
+  
+  
+  simple-custom {
+    background: #ffffff;
+  }
+  
+  /* Both the custom and the built-in element are given italic text */
+  :defined {
+    font-style:oblique;
+  }
+
+  :dir(ltr) {
+    background-color: #000000;
+  }
+  
+  :dir(rtl) {
+    background-color: rgb(1, 1, 1);
+  }
+
+  input[type="text"]:disabled {
+    background: #ffffff;
+  }
+
+
+
+  input:enabled {
+    color: rgb(206, 246, 6);
+  }
+  
+  input:disabled {
+    color: #000000;
+  }
+
+  @page :first {
+    margin-left: 50%;
+    margin-top: 50%;
+  }
+  
+  p {
+    page-break-after: always;
+  }
+
+  p:first-child {
+    color: rgb(234, 255, 7);
+    background-color: rgb(201, 102, 255);
+    padding: 5px;
+  }
+
+
+
+  .red-input:focus {
+    background: rgb(202, 106, 246);
+    color: rgb(3, 3, 3);
+  }
+  
+  .blue-input:focus {
+    background: yellow;
+    color: rgb(195, 58, 245);
+  }
+
+  input,
+button {
+  margin: 10px;
 }
 
-footer{
-    background-color: plum;
+
+:host {
+    font-weight: bold;
+  }
+
+.focus-only:focus {
+  outline: 2px solid black;
 }
+
+.focus-visible-only:focus-visible {
+  outline: 4px dashed rgb(213, 98, 248);
+}
+
+form {
+    border: 1px solid;
+    color: gray;
+    padding: 4px;
+  }
+  
+  form:focus-within {
+    background: #ff8;
+    color: black;
+  }
+  
+  input {
+    margin: 4px;
+  }
+
+  :host-context(h1) {
+    font-weight: bold;
+  }
+  
+  :host-context(main article) {
+    font-weight: bold;
+  }
+  
+  /* Changes paragraph text color from black to white when
+     a .dark-theme class is applied to the document body */
+  p {
+    color: #000;
+  }
+  
+  :host-context(body.dark-theme) p {
+    color: #fff;
+  }
+
+  :host(.special-custom-element) {
+    font-weight: bold;
+  }
+
+  a {
+    background-color: none;
+    transition: background-color 0.5s;
+  }
+  
+  a:hover {
+    background-color: yellow;
+  }
+
+  li {
+    list-style: none;
+    margin-bottom: 1em;
+  }
+  
+  input {
+    border: 1px solid lack;
+  }
+  
+  input:in-range {
+    background-color:#ffffff40;
+  }
+  
+  input:out-of-range {
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 2px solid rgb(246, 255, 0);
+
+  }
+  
+  input:in-range + label::after {
+    content: "okay.";
+  }
+  
+  input:out-of-range + label::after {
+    content: "out of range!";
+  }
+
+  input:indeterminate + label {
+    background: rgb(209, 255, 5);
+  }
+
+  label {
+  display: block;
+  margin: 1px;
+  padding: 1px;
+}
+
+.field {
+  margin: 1px;
+  padding: 1px;
+}
+
+input:invalid {
+  background-color: #ffdddd;
+}
+
+form:invalid {
+  border: 5px solid #ffdddd;
+}
+
+input:valid {
+  background-color: #ffffff;
+}
+
+form:valid {
+  border: 5px solid #ddffdd;
+}
+
+input:required {
+  border-color: #800000;
+  border-width: 3px;
+}
+
+input:required:invalid {
+  border-color: #c00000;
+}
+
+/* Hide the fieldset after an invalid fieldset */
+fieldset:invalid ~ fieldset {
+  display: none;
+}
+
+/* Dim and disable the button while the form is invalid */
+form:invalid button {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: monospace;
+  padding: 0.25em 0.5em;
+}
+
+button {
+  width: 100%;
+  border: thin solid darkgrey;
+  font-size: 1.25em;
+  background-color: darkgrey;
+  color: white;
+}
+
+fieldset:invalid ~ fieldset {
+    display: none;
+  }
+  
+  /* Dim and disable the button while the form is invalid */
+  form:invalid button {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+  
+  input,
+  textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-family: monospace;
+    padding: 0.25em 0.5em;
+  }
+  
+  button {
+    width: 100%;
+    border: thin solid darkgrey;
+    font-size: 1.25em;
+    background-color: darkgrey;
+    color: white;
+  }
+
+  
+
+  :lang(en) > q {
+  quotes: "\201C""\201D""\2018""\2019";
+}
+:lang(fr) > q {
+  quotes: "« " " »";
+}
+:lang(de) > q {
+  quotes: "»" "«" "\2039""\203A";
+}
+
+
+
+a:link {
+    background-color: none;
+    color: green;
+  }
+
+
+
+  label {
+    display: block;
+    margin: 1px;
+    padding: 1px;
+  }
+  
+  .field {
+    margin: 1px;
+    padding: 1px;
+  }
+  
+  input:optional {
+    border-color: rebeccapurple;
+    border-width: 3px;
+  }
+
+  
+  p:-moz-read-write { background: lightgray; }
+  p:read-write { background: lightgray; }
+  p[contenteditable="true"] { color: rgb(182, 45, 245); }
+
+
+input:required {
+    border: 1px dashed red;
+}
+
+@page :right {
+  margin: 2in 3in;
+}
+
+:root {
+  --main-color: hotpink;
+  --pane-padding: 5px 42px;
+}
+
+
+p:target {
+  background-color: gold;
+}
+
+/* Agrega un pseudo-elemento dentro del elemento de destino */
+p:target::before {
+  font: 20% sans-serif;
+  content: "►";
+  color: rgb(164, 66, 255);
+  margin-right: .25em;
+}
+
+/* Estilo de elementos en cursiva dentro del elemento de destino */
+p:target i {
+  color: rgb(225, 249, 11);
+}
+
+input:valid {
+  background-color: #ffffff;
+}
+
+a {
+  /* Especifique los valores predeterminados no transparentes a ciertas propiedades,
+     lo que les permite ser diseñado con el estado :visited */
+  background-color: none;
+  border: 1px solid none;
+}
+
+a:visited {
+  background-color: rgb(176, 57, 231);
+  border-color: none;
+  color: #dcf309;
+}
+
+.exciting-text::after {
+  content: " <- EXCITING!";
+  color: rgb(228, 78, 248);
+}
+
+.boring-text::after {
+  content: " <- BORING";
+  color: red;
+}
+
+q::before {
+  content: "«";
+  color: blue;
+}
+q::after {
+  content: "»";
+  color: red;
+}
+
+input[type=file]::file-selector-button {
+ 
+  padding: .2em .4em;
+  border-radius: .2em;
+  background-color: #ffffff;
+  transition: 1s;
+}
+
+input[type=file]::file-selector-button:hover {
+  background-color: #fbfbfb;
+  
+}
+
+p::first-letter {
+  color: red;
+  font-size: 130%;
+}
+
+
+::first-line {
+  color: blue;
+  text-transform: uppercase;
+
+
+}
+
+ul li::marker {
+  color: red;
+  font-size: 1.5em;
+}
+
+input::placeholder {
+  color: red;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+
+
+

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -10,77 +10,521 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <div class="contenedor">
-       
 
-        <header class="row altura1">
-            <h2>soy header</h2>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"></div>
-        </header>
     
-        <nav class="row altura2">
-            <h2>soy nav</h2>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"></div>
-        </nav>
-    
-    
-        <div class="row altura3">
-            <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
-                <h2>soy section</h2>
-                <article>
-                <h2>soy article</h2>
-                <p>I'm broken, do you hear me?
-                    I'm blinded, 'cause you are everything I see
-                    I'm dancing alone
-                    I'm praying that your heart will just turn around
-                    And as I walk up to your door
-                    My head turns to face the floor
-                    'Cause I can't look you in the eyes and say
-                    When he opens his arms and holds you close tonight
-                    It just won't feel right
-                    'Cause I can't love you more than this, yeah
-                    When he lays you down, I might just die inside
-                    It just don't feel right
-                    'Cause I can't love you more than this
-                    Can't love you more than this
-                    If I'm louder, would you see me?
-                    Would you lay down in my arms and rescue me?
-                    'Cause we are the same
-                    You save me
-                    But when you leave, it's gone again
-                    And then I see you on the street
-                    In his arms, I get weak
-                    My body fails, I'm on my knees, praying
-                    When he opens his arms and holds you close tonight
-                    It just won't feel right
-                    'Cause I can't love you more than this, yeah
-                    When he lays you down, I might just die inside
-                    It just don't feel right
-                    'Cause I can't love you more than this
-                    Yeah, I've never had the words to say
-                    But now I'm asking you to stay
-                    For a little while inside my arms
-                    And as you close your eyes tonight
-                    I pray that you will see the light
-                    That's shining from the stars, above
-                    (And I say)
-                    </p>
-                </article>
-        
-            </section>
-        
-            <aside class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
-            <h2>soy aside</h2>
-            </aside>
-        </div>
-    
-        <footer class="row altura4">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <h2>soy footer</h2>
+       
+      <div class="container">
+
+         <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">
+                        <img src="../bootstrap-semantica/img/gal.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                        Bootstrap
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <a class="navbar-brand" href="#"></a>
+                          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                              </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                              <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+            </nav>
+          
+
+
+        <header class="row a1">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-12 col-xl-12 titulo">
+                <h6>Pseudoclases y pseudoelementos<h6>
             </div>
-        </footer>
+          
+        </header>
+
+    </div>
     
-        </div>
+<div class="contenedor">  
+
+  
+        <section class="row a3">
+
+                <article1 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lila">
+                    <h3>:active</h3>
+                    <a href="">Este enlace cambiará a amarillo cuando se le dé clic.</a>
+                </article1>
+
+                <article2 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 blanco">
+                    <h3>:any-link</h3>
+                    <a href="https://i.pinimg.com/originals/df/ef/52/dfef52bc718c0e35ded5ad5eb80da4bb.jpg">Enlace externo</a><br>
+                    <a href="#">Enlace de destino interno</a><br>
+                </article2>
+
+                <article3 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lila">
+                    <h3>:blank</h3>
+                    <div>
+                      <input type="radio" name="my-input" id="yes">
+                      <label for="yes">Si</label>
+                    
+                      <input type="radio" name="my-input" id="no">
+                      <label for="no">No</label>
+                    </div>
+                    
+                    <div>
+                      <input type="checkbox" name="my-checkbox" id="opt-in">
+                      <label for="opt-in">¡Elije!</label>
+                    </div>
+                    
+                    <select name="my-select" id="fruit">
+                      <option value="opt1">chocorramo</option>
+                      <option value="opt2">gansito</option>
+                      
+                    </select>
+
+                </article3>
+
+                <article4 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 blanco">
+                    <h3>:current</h3>
+                    <video controls preload="metadata">
+                      <source src="video.mp4" type="video/mp4" />
+                      <source src="video.webm" type="video/webm" />
+                      <track
+                        label="English"
+                        kind="subtitles"
+                        srclang="en"
+                        src="subtitles.vtt"
+                        default />
+                    </video>
+                </article4>
+
+
+                <article5 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 blanco">
+                    <h3>:default</h3>
+                    <fieldset>
+                      <legend>género musical favorito</legend>
+                    
+                      <input type="radio" name="musica" id="Pop" value="Pop" />
+                      <label for="Pop">Pop</label>
+                    
+                      <input type="radio" name="musica" id="Rock" value="Rock" checked />
+                      <label for="Rock">Rock</label>
+                    
+                      <input type="radio" name="musica" id="Rap" value="Rap" />
+                      <label for="Rap">Rap</label>
+                    
+                      <input type="radio" name="musica" id="otro" value="otro" />
+                      <label for="otro">otro</label>
+                    </fieldset>
+                </article5>
+
+                <article6 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lila">
+                    <h3>:defined</h3>
+                    <simple-custom text="Custom element example text"></simple-custom>
+
+                    <p>Ejemplo de texto con defined
+        
+                    </p>
+                </article6>
+
+                <article7 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 blanco">
+                    <h3>:dir</h3>
+                    <div dir="ltr">
+                      <span>hello world</span>
+                      <div dir="rtl">
+                        test2
+                        <div dir="auto">עHallo Welt</div>
+                      </div>
+                    </div>
+                </article7>
+
+                <article8 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lila">
+                    <h3>:disabled</h3>
+                    <form action="#">
+                      <fieldset id="shipping">
+                        <legend>Shipping address</legend>
+                        <input type="text" placeholder="Name" />
+                        <input type="text" placeholder="Address" />
+                        <input type="text" placeholder="Phone" />
+                      </fieldset>
+                      <br />
+                      <fieldset id="billing">
+                        <legend>Billing address</legend>
+                        <label for="billing-checkbox">Same as shipping address:</label>
+                        <input type="checkbox" id="billing-checkbox" checked />
+                        <br />
+                        <input type="text" placeholder="Name" disabled />
+                        <input type="text" placeholder="Address" disabled />
+                        <input type="text" placeholder="Phone" disabled />
+                      </fieldset>
+                    </form>
+
+                </article8>
+
+                <article9 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lila">
+                    <h3>:enabled</h3>
+                    <form action="url_of_form">
+                      <label for="FirstField">First field (enabled):</label>
+                      <input type="text" id="FirstField" value="Nombre" /><br />
+                    
+                      <label for="SecondField">Second field (disabled):</label>
+                      <input type="text" id="SecondField" value="Apellido" disabled="disabled" /><br />
+                    
+                      <input type="button" value="Submit" />
+                    </form>
+                </article9>
+
+                <article10 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 blanco">
+                    <h3>:first</h3>
+                    <h4>First Page.</h4>
+                    <h4>Second Page.</h4>
+                    <button>Print!</button>
+
+                </article10>
+
+                <article11 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lila">
+                    <h3>:first-child</h3>
+                    <div>
+                      <p>This text is selected!</p>
+                      <h5>This text isn't selected.</h5>
+                    </div>
+                    
+                    <div>
+                      <h2>This text isn't selected: it's not a `p`.</h2>
+                      <h5>This text isn't selected.</h5>
+                    </div>
+                </article11>
+
+                <article12 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 blanco">
+                    <h3>:focus</h3>
+                    <div><input class="red-input" value="I'll be lila when focused." /></div>
+                    <div><input class="blue-input" value="I'll be yellow when focused." /></div>
+                </article12>
+
+                <article13 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 blanco">
+                    <h3>:focus-visible</h3>
+                    <input value="Default styles" /><br />
+                     <button>Default styles</button><br />
+                     <input class="focus-only" value=":focus only" /><br />
+                     <button class="focus-only">:focus only</button><br />
+                     <input class="focus-visible-only" value=":focus-visible only" /><br />
+                     <button class="focus-visible-only">:focus-visible only</button>
+                </article13>
+
+                <article14 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lila">
+                    <h3>:focus-within</h3>
+                    <p>Try typing into this form.</p>
+
+                     <form>
+                     <label for="given_name">Given Name:</label>
+                     <input id="given_name" type="text" />
+                     <br />
+                     <label for="family_name">Family Name:</label>
+                     <input id="family_name" type="text" />
+                     </form>
+                </article14>
+
+
+                <article15 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 blanco">
+                    <h1>:future</h1>
+                    <video controls preload="metadata">
+                      <source src="video.mp4" type="video/mp4" />
+                      <source src="video.webm" type="video/webm" />
+                      <track
+                        label="English"
+                        kind="subtitles"
+                        srclang="en"
+                        src="subtitles.vtt"
+                        default />
+                    </video>
+                </article15>
+
+                
+
+                <article16 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lila" >
+                    <h3>:host</h3>
+                    <h3>
+                      Host selectors <a href="https://www.youtube.com/watch?v=LwKhIHkxseM"><context-span>example</context-span></a>
+                    </h3>
+                </article16>
+
+                <article17 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lila">
+                  <h3>:host-context</h3>
+                  <h2>
+                    Host selectors <a href="https://www.youtube.com/watch?v=cpB2ZMzXrss"><context-span>example</context-span></a>
+                  </h2>
+
+              </article17>
+
+              <article18 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 blanco">
+                <h3>:host()</h3>
+                <h2>
+                  Host selectors <a href="https://img.kpopmap.com/680x384/2022/04/Stray-Kids-3RACHA-KCON.jpg"><context-span>example</context-span></a>
+                </h2>
+                  
+              </article18>
+
+              <article19 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lila">
+                <h3>:hover</h3>
+                <a href="https://i.pinimg.com/564x/3b/d6/9a/3bd69ac3b1ce3f1ff86d12aa357b5181.jpg">Try hovering over this link.</a>
+                  
+              </article19>
+
+              <article20 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 blanco">
+                  <h3>:in-range</h3>
+                  <form action="" id="form1">
+                    <ul>
+                      Values between 1 and 10 are valid.
+                      <li>
+                        <input
+                          id="value1"
+                          name="value1"
+                          type="number"
+                          placeholder="1 to 10"
+                          min="1"
+                          max="10"
+                          value="12"
+                          required />
+                        <label for="value1">Your value is </label>
+                      </li>
+                    </ul>
+                  </form>
+              </article20>
+
+            <article21 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 blanco">
+                <h3>:invalid</h3>
+                <form>
+                  <div class="field">
+                    <label for="url_input">Enter a URL:</label>
+                    <input type="url" id="url_input" />
+                  </div>
+                
+                  <div class="field">
+                    <label for="email_input">Enter an email address:</label>
+                    <input type="email" id="email_input" required />
+                  </div>
+                </form>
+            </article21>
+                
+
+            <article22 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lila">
+              <h3>:lang</h3>
+              <div lang="en">
+                <q>This English quote has a <q>nested</q> quote inside.</q>
+              </div>
+              <div lang="fr">
+                <q>This French quote has a <q>nested</q> quote inside.</q>
+              </div>
+              <div lang="de">
+                <q>This German quote has a <q>nested</q> quote inside.</q>
+              </div>
+              
+            </article22>
+              
+
+          <article23 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 blanco">
+            <h3>:link</h3>
+            <div>
+              <a href="#ordinary-target">This is an ordinary link.</a><br />
+                <a href="">You've already visited this link.</a><br />
+                <a>Placeholder link (won't get styled)</a>
+            </div>
+            
+            
+          </article23>
+            
+
+        <article24 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lila">
+          <h3>:optional</h3>
+          <form>
+            <div class="field">
+              <label for="url_input">Enter a URL:</label>
+              <input type="url" id="url_input" />
+            </div>
+          
+            <div class="field">
+              <label for="email_input">Enter an email address:</label>
+              <input type="email" id="email_input" required />
+            </div>
+          </form>
+
+        </article24>
+
+        <article25 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lila">
+          <h3>:read-only</h3>
+            <p contenteditable>This paragraph is editable; it is read-write.</p>
+
+            <p>This paragraph is not editable; it is read-only.</p>
+          </h3>
+        
+          
+        </article25>
+
+          
+
+      <article26 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 blanco">
+
+          <h3>:read-write</h3>
+          <input type="text" value="Escribe lo que quieras aquí.">
+          <input type="text" value="Este es un campo de solo lectura." readonly>
+          <p>Este es un párrafo normal.</p>
+          <p contenteditable="true">¡Puedes editar este párrafo!</p>          
+          
+         
+      </article26>
+
+
+      <article27 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lila">
+
+        <h3>:right</h3>
+        <h5>Do you know you got that fire?
+          Ooh, you got that fire inside (ooh, you got that fire inside)
+          Do you know you got the power?
+          Ooh, you got the power to drive (yeah)
+          To drive me wild (wild)
+          Drive me crazy, baby, we'll go for miles</h5>
+      
+      </article27>
+
+
+      <article28 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 blanco">
+        <h3>:root</h3>
+        <h5>To drive me wild (wild)
+          Drive me crazy, baby, we'll go for miles
+          To drive me wild
+          To drive me wild
+          (Drive me)</h5>
+       
+              </article28>
+
+              <article29 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 blanco">
+                <h3>:target</h3>
+                        <ol>
+                         <li><a href="#p1">¡Salta al primer párrafo!</a></li>
+                         <li><a href="#p2">¡Salta al segundo párrafo!</a></li>
+                        </ol>
+
+              
+                        <p id="p1">Puede orientar elegir como blanco <i>este párrafo</i> utilizando un
+                          fragmento de URL. ¡Haz clic en el enlace de arriba para probar!</p>
+                        <p id="p2">Este es <i>otro párrafo</i>, también accesible
+                         desde los enlaces de arriba. ¿No es encantador?</p>
+      
+    
+              </article29>
+
+              <article30 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lila">
+                <h3>:visited</h3>
+
+                    <a href="https://www.youtube.com/watch?v=9R5Fe1iOCyw">¿Ya has visitado este enlace?</a><br>
+                    <a href="">Ya has visitado este enlace.</a>      
+      
+    
+              </article30>
+
+              <article31 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 blanco">
+                <h3>::after</h3>
+                <p class="boring-text">Here is some plain old boring text.</p>
+                <p>Here is some normal text that is neither boring nor exciting.</p>
+                <p class="exciting-text">Contributing to MDN is easy and fun.</p>
+
+    
+              </article31>
+
+
+              <article32 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lila">
+                <h3>::before</h3>
+                <q>Some quotes</q>, he said, <q>are better than none</q>.
+              
+              </article32>
+
+                <article33 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lila">
+                  <h3>::file-selector-bottom</h3>
+                  <form>
+                    <label for="fileUpload">Subir archivo</label>
+                    <input type="file" id="fileUpload">
+                  </form>
+    
+                </article33>
+
+                <article34 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 blanco">
+                  <h3>::first-letter</h3>
+                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr. </p>
+                  <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+                  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
+                  <p>-El comienzo es un signo de puntuación especial.</p>
+    
+                </article34>
+
+                <article35 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lila">
+                  <h3>::first-line</h3>
+                  <p>Los estilos sólo se aplicarán en la primera línea de este párrafo.
+                     Posteriormente, todo el texto tendrá el estilo normal.
+                    ¿Ves?</p>
+
+                    <span>La primera línea de este elemento no recibe ningún estilo
+                    especial, porque no es un elemento de bloque.</span>
+
+  
+                 </article35>
+
+
+                 <article36 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 blanco">
+                   <h3>::marker</h3>
+                   <ul>
+                     <li>Duraznos</li>
+                     <li>Manzanas</li>
+                     <li>Ciruelas</li>
+                   </ul>
+    
+  
+   
+               </article36>
+
+               <article37 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 blanco">
+                 <h3>::placeholder</h3>
+                 <input placeholder="Type something here!">
+  
+
+          
+  
+
+           </article37>
+
+           <article38 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 lila">
+             <h3>:visited</h3>
+
+      
+
+           </article38>
+
+           <article39 class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 blanco">
+             <h3>::after</h3>
+             <p class="boring-text">Here is some plain old boring text.</p>
+             <p>Here is some normal text that is neither boring nor exciting.</p>
+             <p class="exciting-text">Contributing to MDN is easy and fun.</p>
+
+
+           </article39>
+
+        </section>
+
+  </div>
+
+
+              
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -94,3 +538,12 @@
     -->
   </body>
 </html>
+
+
+
+
+
+
+
+
+
